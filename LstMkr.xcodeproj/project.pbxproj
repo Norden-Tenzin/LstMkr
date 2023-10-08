@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		658FE0182ACB0DA500D2A4BF /* LstMkrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0172ACB0DA500D2A4BF /* LstMkrApp.swift */; };
 		658FE01A2ACB0DA500D2A4BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0192ACB0DA500D2A4BF /* ContentView.swift */; };
-		658FE01C2ACB0DA500D2A4BF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE01B2ACB0DA500D2A4BF /* Item.swift */; };
 		658FE01E2ACB0DA600D2A4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658FE01D2ACB0DA600D2A4BF /* Assets.xcassets */; };
 		658FE0212ACB0DA600D2A4BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658FE0202ACB0DA600D2A4BF /* Preview Assets.xcassets */; };
 		658FE02D2ACB0DA700D2A4BF /* LstMkrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE02C2ACB0DA700D2A4BF /* LstMkrTests.swift */; };
 		658FE0372ACB0DA700D2A4BF /* LstMkrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0362ACB0DA700D2A4BF /* LstMkrUITests.swift */; };
 		658FE0392ACB0DA700D2A4BF /* LstMkrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0382ACB0DA700D2A4BF /* LstMkrUITestsLaunchTests.swift */; };
+		658FE0462ACB0E5400D2A4BF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0452ACB0E5400D2A4BF /* ListView.swift */; };
+		658FE0482ACB0E5F00D2A4BF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0472ACB0E5F00D2A4BF /* ListViewModel.swift */; };
+		658FE04A2ACB0E6600D2A4BF /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0492ACB0E6600D2A4BF /* ListModel.swift */; };
+		658FE04D2ACB295100D2A4BF /* SingleNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE04C2ACB295100D2A4BF /* SingleNoteView.swift */; };
+		658FE04F2ACC1F5000D2A4BF /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE04E2ACC1F5000D2A4BF /* Helper.swift */; };
+		658FE0512ACC70A300D2A4BF /* SingleNoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0502ACC70A300D2A4BF /* SingleNoteViewModel.swift */; };
+		658FE0542ACC746100D2A4BF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FE0532ACC746100D2A4BF /* AppState.swift */; };
+		659CF1FE2ACD559F006CCBE3 /* SingleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CF1FD2ACD559F006CCBE3 /* SingleListView.swift */; };
+		659CF2002ACD55AD006CCBE3 /* SingleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659CF1FF2ACD55AD006CCBE3 /* SingleListViewModel.swift */; };
+		65EADD322AD0396000576118 /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 65EADD312AD0396000576118 /* click.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,6 @@
 		658FE0142ACB0DA500D2A4BF /* LstMkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LstMkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		658FE0172ACB0DA500D2A4BF /* LstMkrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LstMkrApp.swift; sourceTree = "<group>"; };
 		658FE0192ACB0DA500D2A4BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		658FE01B2ACB0DA500D2A4BF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		658FE01D2ACB0DA600D2A4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		658FE0202ACB0DA600D2A4BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		658FE0222ACB0DA600D2A4BF /* LstMkr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LstMkr.entitlements; sourceTree = "<group>"; };
@@ -48,6 +56,16 @@
 		658FE0322ACB0DA700D2A4BF /* LstMkrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LstMkrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		658FE0362ACB0DA700D2A4BF /* LstMkrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LstMkrUITests.swift; sourceTree = "<group>"; };
 		658FE0382ACB0DA700D2A4BF /* LstMkrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LstMkrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		658FE0452ACB0E5400D2A4BF /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		658FE0472ACB0E5F00D2A4BF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		658FE0492ACB0E6600D2A4BF /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		658FE04C2ACB295100D2A4BF /* SingleNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNoteView.swift; sourceTree = "<group>"; };
+		658FE04E2ACC1F5000D2A4BF /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		658FE0502ACC70A300D2A4BF /* SingleNoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNoteViewModel.swift; sourceTree = "<group>"; };
+		658FE0532ACC746100D2A4BF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		659CF1FD2ACD559F006CCBE3 /* SingleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleListView.swift; sourceTree = "<group>"; };
+		659CF1FF2ACD55AD006CCBE3 /* SingleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleListViewModel.swift; sourceTree = "<group>"; };
+		65EADD312AD0396000576118 /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +117,14 @@
 			isa = PBXGroup;
 			children = (
 				658FE0172ACB0DA500D2A4BF /* LstMkrApp.swift */,
+				658FE0532ACC746100D2A4BF /* AppState.swift */,
 				658FE0192ACB0DA500D2A4BF /* ContentView.swift */,
-				658FE01B2ACB0DA500D2A4BF /* Item.swift */,
+				658FE04B2ACB0E6B00D2A4BF /* ListView */,
+				658FE0522ACC70A800D2A4BF /* SingleNoteView */,
+				659CF2012ACD55B1006CCBE3 /* SingleListView */,
+				658FE04E2ACC1F5000D2A4BF /* Helper.swift */,
 				658FE01D2ACB0DA600D2A4BF /* Assets.xcassets */,
+				65EADD312AD0396000576118 /* click.wav */,
 				658FE0222ACB0DA600D2A4BF /* LstMkr.entitlements */,
 				658FE0232ACB0DA600D2A4BF /* Info.plist */,
 				658FE01F2ACB0DA600D2A4BF /* Preview Content */,
@@ -132,6 +155,34 @@
 				658FE0382ACB0DA700D2A4BF /* LstMkrUITestsLaunchTests.swift */,
 			);
 			path = LstMkrUITests;
+			sourceTree = "<group>";
+		};
+		658FE04B2ACB0E6B00D2A4BF /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				658FE0452ACB0E5400D2A4BF /* ListView.swift */,
+				658FE0472ACB0E5F00D2A4BF /* ListViewModel.swift */,
+				658FE0492ACB0E6600D2A4BF /* ListModel.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		658FE0522ACC70A800D2A4BF /* SingleNoteView */ = {
+			isa = PBXGroup;
+			children = (
+				658FE04C2ACB295100D2A4BF /* SingleNoteView.swift */,
+				658FE0502ACC70A300D2A4BF /* SingleNoteViewModel.swift */,
+			);
+			path = SingleNoteView;
+			sourceTree = "<group>";
+		};
+		659CF2012ACD55B1006CCBE3 /* SingleListView */ = {
+			isa = PBXGroup;
+			children = (
+				659CF1FD2ACD559F006CCBE3 /* SingleListView.swift */,
+				659CF1FF2ACD55AD006CCBE3 /* SingleListViewModel.swift */,
+			);
+			path = SingleListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EADD322AD0396000576118 /* click.wav in Resources */,
 				658FE0212ACB0DA600D2A4BF /* Preview Assets.xcassets in Resources */,
 				658FE01E2ACB0DA600D2A4BF /* Assets.xcassets in Resources */,
 			);
@@ -264,8 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659CF1FE2ACD559F006CCBE3 /* SingleListView.swift in Sources */,
+				659CF2002ACD55AD006CCBE3 /* SingleListViewModel.swift in Sources */,
+				658FE0482ACB0E5F00D2A4BF /* ListViewModel.swift in Sources */,
+				658FE04F2ACC1F5000D2A4BF /* Helper.swift in Sources */,
+				658FE0462ACB0E5400D2A4BF /* ListView.swift in Sources */,
+				658FE0542ACC746100D2A4BF /* AppState.swift in Sources */,
 				658FE01A2ACB0DA500D2A4BF /* ContentView.swift in Sources */,
-				658FE01C2ACB0DA500D2A4BF /* Item.swift in Sources */,
+				658FE04A2ACB0E6600D2A4BF /* ListModel.swift in Sources */,
+				658FE04D2ACB295100D2A4BF /* SingleNoteView.swift in Sources */,
+				658FE0512ACC70A300D2A4BF /* SingleNoteViewModel.swift in Sources */,
 				658FE0182ACB0DA500D2A4BF /* LstMkrApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,12 +489,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LstMkr/LstMkr.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"LstMkr/Preview Content\"";
 				DEVELOPMENT_TEAM = D7UAPTYYWC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LstMkr/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LstMkr;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +507,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.norden.LstMkr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.norden.listmaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,12 +525,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LstMkr/LstMkr.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"LstMkr/Preview Content\"";
 				DEVELOPMENT_TEAM = D7UAPTYYWC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LstMkr/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LstMkr;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -476,8 +543,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.norden.LstMkr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.norden.listmaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

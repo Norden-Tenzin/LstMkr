@@ -10,23 +10,25 @@ import SwiftData
 
 @main
 struct LstMkrApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+    @State var appState: AppState = AppState()
+    let container: ModelContainer
+    init() {
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            container = try ModelContainer(for: ListModel.self)
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            fatalError("Failed to create ModelContainer for Movie.")
         }
-    }()
-
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack(path: $appState.navigationPath) {
+                ListView(modelContext: container.mainContext)
+            }
+                .environment(appState)
         }
-        .modelContainer(sharedModelContainer)
+            .modelContainer(container)
     }
+
+
 }
